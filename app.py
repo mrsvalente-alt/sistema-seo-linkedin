@@ -31,7 +31,7 @@ if st.button("Gerar Rebranding Completo"):
                         texto_cv += page.extract_text()
 
                 # 2. Configuração do Modelo de IA
-                model = genai.GenerativeModel('gemini-1.5-flash-latest')
+                model = genai.GenerativeModel(model_name="gemini-1.5-flash")
 
                 # 3. Prompt Mestre Estruturado
                 prompt_mestre = f"""
