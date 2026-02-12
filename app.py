@@ -30,7 +30,7 @@ if st.button("Gerar Rebranding Completo"):
 
                 # TENTATIVA COM O MODELO MAIS RECENTE DISPONÍVEL
                 # Mudamos a forma de chamar o modelo para evitar o erro 404
-                model = genai.GenerativeModel('gemini-1.5-flash')
+                model = genai.GenerativeModel('gemini-2.0-flash')
                 
                 prompt_mestre = f"Atue como especialista em LinkedIn. Vaga: {vaga_alvo}. CV: {texto_cv}. Gere: Headline, Sobre e STAR Experiences."
                 
